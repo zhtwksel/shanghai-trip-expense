@@ -1,0 +1,12 @@
+node_modules/
+dist/
+dist-pages/
+*.log
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+coverage/
+playwright-report/
+test-results/
+*-backup.json
