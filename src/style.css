@@ -5,3 +5,10 @@ main.home-page{padding-top:16px}
 .home-page .home-expense-action{width:100%;min-height:60px;padding:16px 24px;border-radius:12px;font-size:18px;line-height:24px;white-space:nowrap}
 
 .shared-tools{display:flex;align-items:center;gap:8px}.shared-tools button{min-width:44px;padding:6px;font-size:24px}.save-status{padding:10px 14px;margin-bottom:14px;border-radius:9px;background:#e8f3ed;color:#145e54;font-size:14px}.form-fields{border:0;padding:0;margin:0;min-width:0}.loading-panel{text-align:center;padding:32px 20px}button:disabled,input:disabled,select:disabled,textarea:disabled{cursor:default;opacity:.6}.data-content[aria-busy=true]{opacity:.85}@media(max-width:560px){.shared-tools{gap:4px}.shared-tools .local{padding:6px;font-size:10px}}
+
+/* Keep native mobile date controls inside two equal grid tracks. */
+.trip-dates{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.trip-dates>label{min-width:0}
+.trip-dates input[type=date]{width:100%;max-width:100%;min-width:0;min-inline-size:0;height:46px;box-sizing:border-box;padding:12px 8px;font-size:14px;appearance:none;-webkit-appearance:none}
+.trip-dates input[type=date]::-webkit-date-and-time-value{min-width:0;text-align:center}
+.trip-dates input[type=date]::-webkit-datetime-edit{min-width:0;padding:0}
